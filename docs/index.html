@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aj (Spy_1345a) — Tinkerer, Builder, Coder</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Aj (Spy_1345a)</h1>
+    <p class="subheading">Tinkerer · Builder · Coder · Server Host</p>
+    <div class="cta-buttons">
+      <a href="#profile" class="btn">View Profile</a>
+      <a href="https://github.com/spy1345a" target="_blank" rel="noopener" class="btn github-btn">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Profile Section -->
+    <section id="profile" class="section">
+      <h2>About Me</h2>
+      <p>Aj (Spy_1345a) is a hands-on tinkerer, builder, and programmer. I work across firmware, hardware, MC server hosting, and software — experimenting, testing, and improving systems while following responsible, legal disclosure and ethics. I’m available for freelance jobs, collaborations, and projects.</p>
+      
+      <!-- NEW: Blog Button (only here!) -->
+      <div class="blog-button-container">
+        <a href="blog.html" class="btn blog-btn">Read My Blog</a>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Programming: C++, Java, HTML, CSS, JavaScript</li>
+        <li>Blender & animation</li>
+        <li>Circuit / IoT design</li>
+        <li>PC building & server hosting (Minecraft)</li>
+        <li>Cybersecurity / security research / game testing</li>
+        <li>Trading</li>
+      </ul>
+      <p class="ethics-note">Responsible research only: I perform security testing and code/game testing in controlled environments or with permission; I don’t publish or use exploits irresponsibly.</p>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <h2>Education</h2>
+      <p>BCA (expected 2026)</p>
+    </section>
+
+    <!-- Availability -->
+    <section class="section">
+      <h2>Availability</h2>
+      <p>Open for jobs / freelance — contact via GitHub or the Gmail above.</p>
+    </section>
+
+    <!-- Projects Placeholder -->
+    <section class="section">
+      <h2>Projects</h2>
+      <p>Projects coming — I’ll add them soon.</p>
+    </section>
+
+    <!-- Blog Placeholder -->
+    <section class="section">
+      <h2>Blog</h2>
+      <p>Blog coming soon.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="contact-item">
+        <span class="label">Email:</span>
+        <span class="email" onclick="copyToClipboard()">nightcrawler2447+Profile@gmail.com</span>
+        <span class="copy-indicator" id="copy-indicator">✓ Copied!</span>
+      </div>
+      <div class="contact-item">
+        <span class="label">GitHub:</span>
+        <a href="https://github.com/spy1345a" target="_blank" rel="noopener">github.com/spy1345a</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Responsible research only: I perform security testing and code/game testing in controlled environments or with permission; I don’t publish or use exploits irresponsibly.</p>
+    <p>&copy; Aj (Spy_1345a) • All rights reserved</p>
+  </footer>
+
+  <script>
+    function copyToClipboard() {
+      const email = "nightcrawler2447+Profile@gmail.com";
+      navigator.clipboard.writeText(email).then(() => {
+        const indicator = document.getElementById("copy-indicator");
+        indicator.style.opacity = "1";
+        setTimeout(() => {
+          indicator.style.opacity = "0";
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
