@@ -331,3 +331,22 @@ footer p:first-of-type {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(142, 68, 173, 0.3);
 }
+
+/* Responsive iframe container */
+.responsive-iframe {
+  position: relative;
+  width: 100%;          /* Take full parent width */
+  padding-bottom: 56.25%;/* 16:9 aspect ratio → adjust if needed */
+  height: 0;
+  overflow: hidden;
+}
+
+/* The iframe itself */
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;          /* Fill the container */
+  height: 100%;
+  border: none;          /* Remove default border */
+}
