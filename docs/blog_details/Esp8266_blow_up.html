@@ -25,6 +25,17 @@
         I should power it with a 5V source directly to the Vin pin of the esp8266, and yes it worked for a few seconds and a capacitor on the esp started smoking<br><br>
         and yep (my second mistake) I saw it burn and the esp8266 was dead.
       </p>
+      <h2>What I Learned</h2>
+      <ol>
+        <li>Always check the voltage and current requirements of your components before connecting them.</li>
+        <li>Use a separate power supply for high-power components like LED arrays instead of powering them directly from the microcontroller.</li>
+        <li>Consider using a transistor or a MOSFET to switch high-power loads instead of driving them directly from GPIO pins.</li>
+        <li>Double-check your wiring and connections to avoid accidental shorts or incorrect connections.</li>
+      </ol><br>
+      <p>In conclusion, breaking my first ESP8266 was a valuable learning experience that taught me important lessons about electronics and circuit design. By being more cautious and informed in my future projects, I can avoid similar mistakes and build more reliable and efficient systems.</p><br>
+      <p>Fortunately, the ESP8266 itself wasn't dead, only the power regulator was dead, 
+        <br>so I desoldered it and using it with an ESP8266-01 programmer,
+        <br>it works fine</p>
       <div class="blog-button-container">
         <a href="Esp8266_blow_up.html" class="btn blog-btn">Read entire post</a>
       </div>
