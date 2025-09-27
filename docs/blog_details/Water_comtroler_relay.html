@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aj (Spy_1345a) — Blog</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Header (Minimal) -->
+  <header class="hero blog-header">
+    <h1>Esp8266_blow_up</h1>
+    <p class="subheading">Firmware Tinkerer • Builder • Coder</p>
+    <a href="../blog_catalog.html" class="btn back-btn"><i class="fas fa-arrow-left"></i> Back to Blog catalogue</a>
+  </header>
+
+  <!-- Main Blog Content -->
+  <main class="blog-main">
+    
+    <section class="section blog-post">
+        <h2>My First ESP8266 Project: Controlling an Electric Water Pump via Telegram</h2>
+        <h4>(Technically not my first project but this the first one I am loading about)</h4>
+      <p> So I had a problem with managing the water for my whole house (we use a lot of water)<br><br>
+    so we had to turn the pump on and off often and it was hard to manage with all the other things we had to do<br>
+
+    <h3>The Problem</h3>
+    <ul>
+        <li>Manually turning on and off the water pump was inconvenient.</li>
+        <li>countinuous run for hours without know how turen it on or of, why and when(we are human erroes are commen)</li>
+        <li> and sometimes we forget to turn it off, wasting water and energy adn over fulling the tank multiple times</li>
+        <li> the tank is in 8 floor??? (idk its complicated) so it not possible to check the tank level manually</li>
+    </ul>
+    <br>
+    <h3>The Needs for the solution</h3>
+    <ul>   
+        <li>Automate the water pump control</li>
+        <li>keep a log when it turned off and on</li>
+        <li>multiple people need to have access from anywhere in the house or outside(or world lol)</li>
+    </ul>
+    <br>
+    <h3>What i did to create solution</h3>
+      <ul>
+        <li> already had an ESP8266 module(because cheap)</li>
+        <li> used an relay module to control the pump</li>
+        <li> and using Telegram bot api(because free)</li>
+      </ul>
+      <br>  
+      <h3>The Components</h3>
+      <ul>
+        <li>ESP8266 Module (node mcu)</li>
+        <li>Relay Module x 2 (12volt controlled and 5 volt controlled)</li>
+        <li>Electric Water Pump(already there)</li>
+        <li>voltage booster module (to step up the 5V to 12V)</li>
+        <li>voltage regulator (to step down the 5V to 3.3V for the esp8266)</li>
+        <li>Power Supply(cheap 5 volt micro usb adapter)</li>
+        <li>Telegram Bot API(free!!!! with limites ofc ther is no such things as free lunch)</li>
+        <h6>(I am not including the cost because i dont rember but you can check out my code at my github)</h6>
+      </ul>
+
+      <h2> The first Prototype</h2>
+      <p> using a bread board and a esp8266 i made a simple prototype to control the water pump</p>
+      
+      <div class="responsive-iframe">
+        <iframe
+          src="#" ##add your img link here
+          allow="autoplay">
+        </iframe>
+      </div>
+      <br>
+      <p>Not my best work but it gets the job done<br>
+        The problem is it kept overheating and the code was a MESS <br>
+      </p>
+
+      <h2>The Final Version</h2>
+        <p> So after a lot of soldering, took me a day to make the final version<br>
+        I made a handmade pcb and soldered all the wires myself<br>
+        I also made a simple enclosure to protect the electronics from dust and water(A green plastic box , i dont have 3d printer)<br>
+
+        To be honest the orginal plan was to make an the 12 volt relay controled by an mosfet<br>
+        but the shop didn't have the parts I needed so I had to improvise(there is nothing bad about improvising)<br>
+        I used a 5 volt relay instead which controles the 12 volt relay<br>
+      </p>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Responsible research only: I perform security testing and code/game testing in controlled environments or with permission; I don’t publish or use exploits irresponsibly.</p>
+    <p>&copy; Aj (Spy_1345a) • All rights reserved</p>
+  </footer>
+</body>
+</html>
