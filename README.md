@@ -9,7 +9,7 @@ Self-taught infrastructure engineer. I don't have a degree — I have production
 | System | Stack | Status |
 |---|---|---|
 | Public Minecraft SMP | Oracle Cloud VPS · Docker · Linux | 🟢 Live |
-| Neighbourhood Water Pump Automation | ESP8266 · Relay · Telegram Bot | 🟢 1+ year uptime |
+| Water Pump Automation | ESP8266 · Relay · Telegram Bot | 🟢 1+ year uptime |
 | WireGuard VPN Mesh | Oracle Cloud · WireGuard · iptables | 🟢 Live |
 | Local LLM Inference Server | llama.cpp · CLBlast · RX 580 8GB | 🟢 Live |
 | Voice Comms Server | Mumble · Podman · Oracle Cloud | 🟢 Live |
