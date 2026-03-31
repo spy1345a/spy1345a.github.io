@@ -19,10 +19,22 @@ Infrastructure engineer building production systems with real uptime and real us
 ## 🛠️ Skills
 
 **Infrastructure & Cloud**
-`Linux (Arch)` `Oracle Cloud` `VPS Management` `WireGuard VPN` `iptables` `systemd`
+`Linux (Arch)` `Oracle Cloud` `systemd` `iptables/nftables` `SSH hardening` `Home lab`
 
-**Containers**
-`Docker` `Podman` `Docker Compose`
+**Networking**
+`WireGuard VPN` `TCP/IP` `DNS` `NAT/routing` `Network isolation` `Reverse proxy`
+
+**Containers & Orchestration**
+`Docker` `Podman` `Docker Compose` `Kubernetes (k3s)` `Helm`
+
+**IaC & Automation**
+`Terraform` `Ansible` `Cloud provisioning`
+
+**CI/CD**
+`GitHub Actions` `GitLab CI` `Pipeline automation` `Automated testing`
+
+**Observability**
+`Prometheus` `Grafana` `Loki` `Alerting`
 
 **IoT & Embedded**
 `ESP8266` `Relay Control` `MicroPython/C` `Telegram Bot API` `Home Automation`
@@ -30,8 +42,8 @@ Infrastructure engineer building production systems with real uptime and real us
 **ML / AI Infrastructure**
 `llama.cpp` `CLBlast` `OpenCL` `AMD GPU Compute` `LLM Quantization`
 
-**Scripting & Tooling**
-`Bash` `Fish Shell` `Git` `SSH`
+**Tooling**
+`Bash` `Fish Shell` `Git` `CMake` `Vim`
 
 ---
 
