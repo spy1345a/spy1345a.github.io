@@ -17,6 +17,7 @@
         <span class="logo-prompt">~/</span>
         <span class="logo-name">spy1345a</span>
         <span class="cursor"></span>
+        <span class="typing-contact" id="typing-contact"></span>
       </div>
       <nav>
         <a href="#projects">Projects</a>
@@ -260,6 +261,37 @@
     <a class="footer-link" href="https://github.com/spy1345a" target="_blank">github.com/spy1345a ↗</a>
   </div>
 </footer>
+
+<script>
+const texts = ['ajeshmb24@gmail.com', 'github.com/spy1345a'];
+const el = document.getElementById('typing-contact');
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function type() {
+  const current = texts[textIndex];
+  if (isDeleting) {
+    el.textContent = current.substring(0, charIndex - 1);
+    charIndex--;
+  } else {
+    el.textContent = current.substring(0, charIndex + 1);
+    charIndex++;
+  }
+  
+  if (!isDeleting && charIndex === current.length) {
+    isDeleting = true;
+    setTimeout(type, 2000);
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    textIndex = (textIndex + 1) % texts.length;
+    setTimeout(type, 500);
+  } else {
+    setTimeout(type, isDeleting ? 50 : 100);
+  }
+}
+type();
+</script>
 
 </body>
 </html>

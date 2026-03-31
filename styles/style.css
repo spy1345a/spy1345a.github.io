@@ -106,6 +106,12 @@
       margin-left: 2px;
     }
 
+    .typing-contact {
+      color: var(--text-dim);
+      font-size: 12px;
+      margin-left: 16px;
+    }
+
     @keyframes blink { 50% { opacity: 0; } }
 
     nav { display: flex; gap: 24px; }
