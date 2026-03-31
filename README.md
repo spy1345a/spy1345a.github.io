@@ -1,6 +1,6 @@
 # hey, I'm spy1345a 👾
 
-Self-taught infrastructure engineer. I don't have a degree — I have production systems that have been running for over a year.
+Infrastructure engineer building production systems with real uptime and real users.
 
 ---
 
@@ -8,7 +8,7 @@ Self-taught infrastructure engineer. I don't have a degree — I have production
 
 | System | Stack | Status |
 |---|---|---|
-| Public Minecraft SMP | Oracle Cloud VPS · Docker · Linux | 🟢 Live |
+| Public Minecraft SMP | Home Lab · Docker · Linux | 🟢 Live |
 | Water Pump Automation | ESP8266 · Relay · Telegram Bot | 🟢 1+ year uptime |
 | WireGuard VPN Mesh | Oracle Cloud · WireGuard · iptables | 🟢 Live |
 | Local LLM Inference Server | llama.cpp · CLBlast · RX 580 8GB | 🟢 Live |
@@ -41,15 +41,6 @@ Self-taught infrastructure engineer. I don't have a degree — I have production
 - 🎮 [Minecraft SMP Server](projects/minecraft-smp.md) — public server, uptime management
 - 💧 [Water Pump IoT System](projects/water-pump-iot.md) — safety-critical home automation
 - 🧠 [Local LLM Setup](projects/local-llm.md) — llama.cpp on RX 580 with CLBlast
-
----
-
-## 📊 Currently Learning
-
-- [ ] Terraform — infrastructure as code
-- [ ] Ansible — configuration management
-- [ ] Prometheus + Grafana — monitoring stack
-- [ ] k3s — lightweight Kubernetes on my VPS
 
 ---
 

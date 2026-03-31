@@ -25,9 +25,7 @@ Oracle Cloud VPS (public IP)
    ├── WireGuard VPN (UDP 51820)
    │     └── Private mesh network for secure access
    ├── Mumble Server (via Podman)
-   │     └── Voice comms for SMP players
-   ├── Minecraft SMP (via Docker)
-   │     └── See: minecraft-smp.md
+   │     └── Voice comms for personal projects
    └── Firewall (iptables)
          └── Allowlist-only ingress
 ```
@@ -44,10 +42,10 @@ Oracle Cloud VPS (public IP)
 ### Mumble (Voice Server)
 - Running in a **Podman** container (rootless)
 - Persistent config via bind mount
-- Used alongside the Minecraft SMP for player voice comms
+- Voice comms for personal projects
 
 ### Container Strategy
-- **Docker** for public-facing services (Minecraft)
+- **Docker** for various workloads
 - **Podman** for system-level services (rootless, no daemon, more secure)
 - All containers use named volumes for persistent data
 - Restart policies set to `unless-stopped`
@@ -56,7 +54,7 @@ Oracle Cloud VPS (public IP)
 
 ## Networking
 
-- Inbound: Only WireGuard port + game ports exposed
+- Inbound: Only WireGuard port exposed
 - All management done via WireGuard tunnel
 - iptables rules to drop everything not explicitly allowed
 

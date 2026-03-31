@@ -1,15 +1,15 @@
 # 🎮 Public Minecraft SMP Server
 
-> A publicly accessible Minecraft survival multiplayer server, containerised and hosted on Oracle Cloud, serving a real player community.
+> A publicly accessible Minecraft survival multiplayer server, containerised and hosted on self-hosted hardware, serving a real player community.
 
 ---
 
 ## Overview
 
-A production Minecraft server running as a Docker container on Oracle Cloud, open to the public. Managing a live game server with real users means real uptime pressure — players notice when it goes down.
+A production Minecraft server running as a Docker container on self-hosted hardware, open to the public. Managing a live game server with real users means real uptime pressure — players notice when it goes down.
 
 **Status:** 🟢 Live  
-**Hosting:** Oracle Cloud VPS  
+**Hosting:** Self-hosted (home lab)  
 **Container:** Docker  
 **Access:** Public internet
 
@@ -21,7 +21,7 @@ A production Minecraft server running as a Docker container on Oracle Cloud, ope
 Players (Internet)
       │
       ▼
-Oracle Cloud VPS
+Self-hosted Server (Home Lab)
       │
       ▼
 Docker Container (Minecraft Java Server)
